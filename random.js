@@ -1,9 +1,17 @@
-    $(function () {
+$(function () {
     var run = 0,
         heading = $("h1"),
-        timer;
+        timer,
+        $i = 0;
 
     $("#start").click(function () {
+        $i++;
+        if($i >6 ){
+            alert('这么作？今天别吃了！');
+            $(this).hide();
+            document.onkeydown = function() {};
+            return;
+        }
         var list = $("#list").val().replace(/ +/g, " ").replace(/^ | $/g, "").split(" ");
         if (!run) {
             heading.html(heading.html().replace("吃这个！", "吃什么？"));
