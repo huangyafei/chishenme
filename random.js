@@ -1,12 +1,12 @@
-$(function () {
+$(function() {
     var run = 0,
         heading = $("h1"),
         timer,
         $i = 0;
 
-    $("#start").click(function () {
+    $("#start").click(function() {
         $i++;
-        if($i >6 ){
+        if ($i > 6) {
             alert('这么作？今天别吃了！');
             $(this).hide();
             document.onkeydown = function() {};
@@ -16,7 +16,7 @@ $(function () {
         if (!run) {
             heading.html(heading.html().replace("吃这个！", "吃什么？"));
             $(this).val("停止");
-            timer = setInterval(function () {
+            timer = setInterval(function() {
                 var r = Math.ceil(Math.random() * list.length),
                     food = list[r - 1];
                 $("#what").html(food);
@@ -26,17 +26,17 @@ $(function () {
                 $("<span class='temp'></span>").html(food).hide().css({
                     "top": rTop,
                     "left": rLeft,
-                    "color": "rgba(0,0,0,." + Math.random() + ")",
+                    "color": `rgba(0,0,0,.${Math.random()})`,
                     "fontSize": rSize + "px"
-                }).appendTo("body").fadeIn("slow", function () {
-                    $(this).fadeOut("slow", function () {
+                }).appendTo("body").fadeIn("slow", function() {
+                    $(this).fadeOut("slow", function() {
                         $(this).remove();
                     });
                 });
             }, 50);
             run = 1;
         } else {
-           heading.html(heading.html().replace("吃什么？", "吃这个！"));
+            heading.html(heading.html().replace("吃什么？", "吃这个！"));
             $(this).val("不行，换一个");
             clearInterval(timer);
             run = 0;
