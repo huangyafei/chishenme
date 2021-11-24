@@ -50,7 +50,7 @@ body {
     width: 120px;
     height: 40px;
     vertical-align: middle;
-    font-family: 微软雅黑;
+    font-family: "微软雅黑";
     cursor: pointer;
 }
 
@@ -92,10 +92,4 @@ body {
     cursor: pointer;
     width: 50px;
     height: 22px;
-}
-
-#weibo {
-    position: absolute;
-    bottom: 15px;
-    right: 15px;
 }
