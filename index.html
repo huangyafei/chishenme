@@ -1,43 +1,41 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="zh-Hans">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>中午吃什么</title>
     <meta name="keywords" content="中午吃什么" />
     <meta name="description" content="中午吃什么" />
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="default.css">
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="default.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-71978237-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
+      
       gtag('config', 'UA-71978237-1');
     </script>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div id="wrapper">
-        <h1>
-            中午吃什么，吃什么？
-            <br>
-            <br>
-            <b style="color:#FF9733" id="what"></b>
-        </h1>
-        <input type="button" value="开始" id="start" />
-        <input type="button" value="开始" id="stop" style="display: none;">
+      <h1>
+        中午吃什么，吃什么？
+        <br />
+        <br />
+        <b style="color: #ff9733" id="what"></b>
+      </h1>
+      <input type="button" value="开始" id="start" />
+      <input type="button" value="开始" id="stop" style="display: none" />
     </div>
 
-    <textarea rows="9" cols="53" id="list" style="display:none">
+    <textarea rows="9" cols="53" id="list" style="display: none">
                 馄饨 拉面 烩面 热干面 刀削面 油泼面 炸酱面 炒面 重庆小面 米线 酸辣粉 土豆粉 螺狮粉 凉皮儿 麻辣烫 肉夹馍 羊肉汤 炒饭 盖浇饭 卤肉饭 烤肉饭 黄焖鸡米饭 驴肉火烧 川菜 麻辣香锅 火锅 酸菜鱼 烤串 披萨 烤鸭 汉堡 炸鸡 寿司 蟹黄包 煎饼果子 生煎 炒年糕
     </textarea>
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="random.js"></script>
     <script src="three_punch_combo.js"></script>
-
-</body>
+  </body>
 </html>
